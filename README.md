@@ -19,7 +19,7 @@ The exporter supports the following main features
 - Easily define custom metrics using YAML or TOML
 - Define the scrape interval, database query timeout, and other parameters on a per-metric, per-database level
 - Customize the database connection pool using go-sql, Oracle AI Database connection pools, and works with Database Resident Connection Pools
-- Includes a sample [Grafana dashboards](https://github.com/oracle/oracle-db-appdev-monitoring/tree/main/docker-compose/grafana) for inspiration or customization
+- Includes a sample [Grafana dashboards](https://github.com/Electrenator/oracle-db-appdev-monitoring/tree/main/docker-compose/grafana) for inspiration or customization
 
 ## Contributing
 

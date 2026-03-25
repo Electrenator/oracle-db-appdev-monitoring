@@ -16,7 +16,7 @@ Container images:
 
 ### Pre-built binaries
 
-Download pre-built binaries from the metrics exporter [GitHub Releases page](https://github.com/oracle/oracle-db-appdev-monitoring/releases).
+Download pre-built binaries from the metrics exporter [GitHub Releases page](https://github.com/Electrenator/oracle-db-appdev-monitoring/releases).
 
 `linux-amd64`, `linux-arm64`, and  `darwin-arm64` binaries are included, built using GLIBC 2.39. If you require a specific target architecture or are using an older verison of GLIBC, it's recommended to build the metrics exporter binary yourself.
 

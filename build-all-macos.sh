@@ -71,7 +71,7 @@ build_ol() {
                                     rm -rf /usr/local/go && \
                                     tar -C /usr/local -xzf go${GO_VERSION}.linux-${platform}.tar.gz && \
                                     export PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/local/go/bin && \
-                                    git clone --depth 1 https://github.com/oracle/oracle-db-appdev-monitoring.git && \
+                                    git clone --depth 1 https://github.com/Electrenator/oracle-db-appdev-monitoring.git && \
                                     cd oracle-db-appdev-monitoring && \
                                     make go-build VERSION=$VERSION TAGS=$TAGS CGO_ENABLED=$CGO_ENABLED"
 
@@ -87,7 +87,7 @@ build_ubuntu() {
   docker run -d --platform "linux/amd64" --name "${container}" "${UBUNTU_IMAGE}" tail -f /dev/null
   docker exec "${container}" bash -c "apt-get update -y && \
                                       apt-get -y install podman qemu-user-static golang gcc-aarch64-linux-gnu git make && \
-                                      git clone --depth 1 https://github.com/oracle/oracle-db-appdev-monitoring.git && \
+                                      git clone --depth 1 https://github.com/Electrenator/oracle-db-appdev-monitoring.git && \
                                       cd oracle-db-appdev-monitoring && \
                                       make go-build-linux-amd64 VERSION=$VERSION TAGS=$TAGS CGO_ENABLED=$CGO_ENABLED && \
                                       make go-build-linux-gcc-arm64 VERSION=$VERSION  TAGS=$TAGS CGO_ENABLED=$CGO_ENABLED"

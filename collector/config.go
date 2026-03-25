@@ -10,9 +10,9 @@ import (
 	"strings"
 	"time"
 
-	"github.com/oracle/oracle-db-appdev-monitoring/v2/azvault"
-	"github.com/oracle/oracle-db-appdev-monitoring/v2/hashivault"
-	"github.com/oracle/oracle-db-appdev-monitoring/v2/ocivault"
+	"github.com/Electrenator/oracle-db-appdev-monitoring/v2/azvault"
+	"github.com/Electrenator/oracle-db-appdev-monitoring/v2/hashivault"
+	"github.com/Electrenator/oracle-db-appdev-monitoring/v2/ocivault"
 	"github.com/prometheus/exporter-toolkit/web"
 	"gopkg.in/yaml.v2"
 )

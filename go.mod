@@ -1,4 +1,4 @@
-module github.com/oracle/oracle-db-appdev-monitoring/v2
+module github.com/Electrenator/oracle-db-appdev-monitoring/v2
 
 go 1.25.7
 

@@ -76,9 +76,9 @@ end;
 
 ### How to create some traffic with Java (Spring Boot)
 
-A simple load generator is provided in [this directory](https://github.com/oracle/oracle-db-appdev-monitoring/tree/main/docker-compose/txeventq-load) which you can use to create some traffic so you can experiment with the sample dashboard.
+A simple load generator is provided in [this directory](https://github.com/Electrenator/oracle-db-appdev-monitoring/tree/main/docker-compose/txeventq-load) which you can use to create some traffic so you can experiment with the sample dashboard.
 
-To run the sample, first update [application.yaml](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/docker-compose/txeventq-load/src/main/resources/application.yaml) with the correct IP address for your database, then start the application as follows:
+To run the sample, first update [application.yaml](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/docker-compose/txeventq-load/src/main/resources/application.yaml) with the correct IP address for your database, then start the application as follows:
 
 ```bash
 mvn spring-boot:run
@@ -88,7 +88,7 @@ The application will create ten queues names TOPIC_0 through TOPIC_9 and randoml
 
 ### Metrics definitions
 
-The metrics definitions are provided in [this file](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/custom-metrics-example/txeventq-metrics.toml).  You need to provide this file to the exporter, e.g., by adding it to your container image, or creating a Kubernetes config map containing the file and mounting that config map as a volume in your deployment.  You also need to set the `CUSTOM_METRICS` environment variable to the location of this file.
+The metrics definitions are provided in [this file](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/custom-metrics-example/txeventq-metrics.toml).  You need to provide this file to the exporter, e.g., by adding it to your container image, or creating a Kubernetes config map containing the file and mounting that config map as a volume in your deployment.  You also need to set the `CUSTOM_METRICS` environment variable to the location of this file.
 
 ### Additional database permissions
 
@@ -108,7 +108,7 @@ grant select on user_queue_partition_assignment_table to exporter;
 
 ### Grafana dashboard
 
-A Grafana dashboard for Transactional Event Queues is provided [in this file](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/docker-compose/grafana/dashboards/txeventq.json).  This can be imported into your Grafana environment.  Choose the Prometheus datasource that is collecting metrics from the exporter.
+A Grafana dashboard for Transactional Event Queues is provided [in this file](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/docker-compose/grafana/dashboards/txeventq.json).  This can be imported into your Grafana environment.  Choose the Prometheus datasource that is collecting metrics from the exporter.
 
 > Note:  You may not see any activity on the dashboard unless there are clients producing and consuming messages from topics.
 

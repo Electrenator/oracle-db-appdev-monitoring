@@ -504,7 +504,7 @@ func (e *Exporter) scrapeGenericValues(d *Database, ch chan<- prometheus.Metric,
 	}
 	if !m.IgnoreZeroResult && metricsCount == 0 {
 		// a zero result error is returned for caller error identification.
-		// https://github.com/oracle/oracle-db-appdev-monitoring/issues/168
+		// https://github.com/Electrenator/oracle-db-appdev-monitoring/issues/168
 		return newZeroResultError()
 	}
 	return err

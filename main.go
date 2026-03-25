@@ -29,8 +29,8 @@ import (
 	// Required for debugging
 	// _ "net/http/pprof"
 
-	"github.com/oracle/oracle-db-appdev-monitoring/v2/alertlog"
-	"github.com/oracle/oracle-db-appdev-monitoring/v2/collector"
+	"github.com/Electrenator/oracle-db-appdev-monitoring/v2/alertlog"
+	"github.com/Electrenator/oracle-db-appdev-monitoring/v2/collector"
 )
 
 const fallbackVersion = "0.0.0.dev"

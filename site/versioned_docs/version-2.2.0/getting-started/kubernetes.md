@@ -61,7 +61,7 @@ kubectl create cm db-metrics-txeventq-exporter-config \
 
 ### Deploy the Oracle AI Database Observability exporter
 
-A sample Kubernetes manifest is provided [here](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/kubernetes/metrics-exporter-deployment.yaml).  You must edit this file to set the namespace you wish to use, the database connect string to use, and if you have any custom metrics, you will need to uncomment and customize some sections in this file.
+A sample Kubernetes manifest is provided [here](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/kubernetes/metrics-exporter-deployment.yaml).  You must edit this file to set the namespace you wish to use, the database connect string to use, and if you have any custom metrics, you will need to uncomment and customize some sections in this file.
 
 Once you have made the necessary updates, apply the file to your cluster using this command:
 
@@ -83,7 +83,7 @@ kubectl logs -f svc/metrics-exporter -n exporter
 
 ### Create a Kubernetes service for the exporter
 
-Create a Kubernetes service to allow access to the exporter pod(s).  A sample Kubernetes manifest is provided [here](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/kubernetes/metrics-exporter-service.yaml).  You may need to customize this file to update the namespace.
+Create a Kubernetes service to allow access to the exporter pod(s).  A sample Kubernetes manifest is provided [here](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/kubernetes/metrics-exporter-service.yaml).  You may need to customize this file to update the namespace.
 
 Once you have made any necessary udpates, apply the file to your cluster using this command:
 
@@ -93,7 +93,7 @@ kubectl apply -f metrics-exporter-service.yaml
 
 ### Create a Kubernetes service monitor
 
-Create a Kubernetes service monitor to tell Prometheus (for example) to collect metrics from the exporter.  A sample Kubernetes manifest is provided [here](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/kubernetes/metrics-service-monitor.yaml).  You may need to customize this file to update the namespace.
+Create a Kubernetes service monitor to tell Prometheus (for example) to collect metrics from the exporter.  A sample Kubernetes manifest is provided [here](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/kubernetes/metrics-service-monitor.yaml).  You may need to customize this file to update the namespace.
 
 Once you have made any necessary udpates, apply the file to your cluster using this command:
 

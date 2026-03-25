@@ -39,7 +39,7 @@ Metrics files must contain a series of `[[metric]]` definitions, in TOML, or the
 | labels           | Metric labels, which must match column names in the query. Any column that is not a label will be parsed as a metric                                                                                                                                                                | Array of Strings                  | No       |                                   |
 | metricsdesc      | Mapping between field(s) in the request and comment(s)                                                                                                                                                                                                                              | Dictionary of Strings             | Yes      |                                   |
 | metricstype      | Mapping between field(s) in the request and [Prometheus metric types](https://prometheus.io/docs/concepts/metric_types/)                                                                                                                                                            | Dictionary of Strings             | No       |                                   |
-| metricsbuckets   | Split [histogram](https://prometheus.io/docs/concepts/metric_types/#histogram) metric types into buckets based on value ([example](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/custom-metrics-example/metric-histogram-example.toml))                           | Dictionary of String dictionaries | No       |                                   |
+| metricsbuckets   | Split [histogram](https://prometheus.io/docs/concepts/metric_types/#histogram) metric types into buckets based on value ([example](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/custom-metrics-example/metric-histogram-example.toml))                           | Dictionary of String dictionaries | No       |                                   |
 | fieldtoappend    | Field from the request to append to the metric FQN. This field will **not** be included in the metric labels.                                                                                                                                                                       | String                            | No       |                                   |
 | request          | Oracle AI Database query to run for metrics scraping                                                                                                                                                                                                                                   | String                            | Yes      |                                   |
 | ignorezeroresult | Whether or not an error will be printed if the request does not return any results                                                                                                                                                                                                  | Boolean                           | No       | false                             |
@@ -126,8 +126,8 @@ oracledb_test_value_1 1
 oracledb_test_value_2 2
 ```
 
-You can find [working examples](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/custom-metrics-example/custom-metrics.toml) of custom metrics for slow queries, big queries and top 100 tables.
-An example of [custom metrics for Transacational Event Queues](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/custom-metrics-example/txeventq-metrics.toml) is also provided.
+You can find [working examples](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/custom-metrics-example/custom-metrics.toml) of custom metrics for slow queries, big queries and top 100 tables.
+An example of [custom metrics for Transacational Event Queues](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/custom-metrics-example/txeventq-metrics.toml) is also provided.
 
 #### Override Existing, Individual Metrics
 
@@ -182,7 +182,7 @@ metrics:
       group by inst_id, status, type
 ```
 
-The default metrics are provided in YAML format as an example. See [default-metrics.yaml](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/default-metrics.yaml).
+The default metrics are provided in YAML format as an example. See [default-metrics.yaml](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/default-metrics.yaml).
 
 ### Customize metrics in a container image
 

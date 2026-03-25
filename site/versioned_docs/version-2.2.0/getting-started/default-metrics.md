@@ -5,7 +5,7 @@ sidebar_position: 2
 
 # Default Metrics
 
-The exporter includes [default metrics](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/collector/default_metrics.toml) for Oracle AI Database, and process-specific metrics on the `go` runtime.
+The exporter includes [default metrics](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/collector/default_metrics.toml) for Oracle AI Database, and process-specific metrics on the `go` runtime.
 
 You can find the exporter's metric schema in the [Custom Metrics configuration](../configuration/custom-metrics.md#metric-schema).
 

@@ -10,7 +10,7 @@ The metrics supports monitoring multiple database instances, querying default an
 
 Over time, this project will provide not just metrics, but also logging and tracing support, and integration into popular frameworks like Spring Boot. The project aims to deliver functionality to support both cloud and on-premises databases, including those running in Kubernetes and containers.
 
-Contributions are welcome - please see [contributing](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/CONTRIBUTING.md).
+Contributions are welcome - please see [contributing](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/CONTRIBUTING.md).
 
 ![Oracle AI Database Dashboard](/img/exporter-running-against-basedb.png)
 
@@ -29,7 +29,7 @@ The exporter supports the following main features
 - Easily define custom metrics using YAML or TOML
 - Define the scrape interval, database query timeout, and other parameters on a per-metric, per-database level
 - Customize the database connection pool using go-sql, Oracle AI Database connection pools, and works with Database Resident Connection Pools
-- Includes a sample [Grafana dashboards](https://github.com/oracle/oracle-db-appdev-monitoring/tree/main/docker-compose/grafana) for inspiration or customization
+- Includes a sample [Grafana dashboards](https://github.com/Electrenator/oracle-db-appdev-monitoring/tree/main/docker-compose/grafana) for inspiration or customization
 
 ## Supported Oracle AI Database Versions
 

@@ -15,7 +15,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/oracle/oracle-db-appdev-monitoring/v2/collector"
+	"github.com/Electrenator/oracle-db-appdev-monitoring/v2/collector"
 )
 
 type LogRecord struct {

@@ -7,7 +7,7 @@ sidebar_position: 3
 
 The exporter is a Go program using the Prometheus SDK. 
 
-External contributions are welcome, see [CONTRIBUTING](https://github.com/oracle/oracle-db-appdev-monitoring/blob/main/CONTRIBUTING.md) for details.
+External contributions are welcome, see [CONTRIBUTING](https://github.com/Electrenator/oracle-db-appdev-monitoring/blob/main/CONTRIBUTING.md) for details.
 
 The exporter initialization is as follows:
 

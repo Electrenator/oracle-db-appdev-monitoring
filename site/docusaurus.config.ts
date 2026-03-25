@@ -45,7 +45,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/oracle/oracle-db-appdev-monitoring/tree/main/site/',
+            'https://github.com/Electrenator/oracle-db-appdev-monitoring/tree/main/site/',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -75,7 +75,7 @@ const config: Config = {
           versions: ['current', '2.2.2', '2.2.1', '2.2.0', '2.1.0', '2.0.4', '2.0.3' ]
         },
         {
-          href: 'https://github.com/oracle/oracle-db-appdev-monitoring',
+          href: 'https://github.com/Electrenator/oracle-db-appdev-monitoring',
           label: 'GitHub',
           position: 'right',
         },
@@ -115,7 +115,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/oracle/oracle-db-appdev-monitoring',
+              href: 'https://github.com/Electrenator/oracle-db-appdev-monitoring',
             },
           ],
         },
